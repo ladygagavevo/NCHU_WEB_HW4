@@ -1,0 +1,256 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+<script>
+
+
+    $('#btn').click(function(e){    
+    $('#fancy, #btn').fadeOut('slow', function(){
+        $('#bank, #btn-bk').fadeIn('slow');
+    });
+});
+
+    $('#btn-bk').click(function(e){    
+        $('#bank, #btn-bk').fadeOut('slow', function(){
+            $('#fancy, #btn').fadeIn('slow');
+        });
+    });
+
+
+
+$(document).ready(function(){
+    $("#hide").click(function(){
+        $("#chooose").fadeIn();
+        $("#div2").fadeIn("slow");
+		 $("#div4").fadeIn(3000);
+        $("#div3").fadeIn(3000);
+		 $("#div4").fadeIn(3000);
+    });
+});
+
+
+</script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+	    $(".btn2").click(function(){
+        $("#p1").slideDown();
+    });
+
+    $(".btn1").click(function(){
+        $("#p1").slideUp();
+    });
+
+});
+</script>
+
+<style type="text/css">
+
+div.absolute {
+    position: absolute;
+    top: 218px;
+    right: 0;
+    width: 1090px;
+    height: 100px;
+
+}
+
+
+</style>
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("#hide").click(function(){
+        $("#divv").hide();
+    });
+    $("#show").click(function(){
+        $("#divv").show();
+    });
+});
+</script>
+
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("#fg1").click(function(){
+        $("#fg11").toggle();
+		$("#ff1").toggle();
+    });
+});
+</script>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("#fg2").click(function(){
+        $("#fg21").slideToggle("fast");
+		$("#ff2").slideToggle("fast");
+    });
+});
+</script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("#fg1").click(function(){
+        $("#fg21").hide();
+		$("#ff2").hide();
+    });
+    $("#fg2").click(function(){
+        $("#fg11").hide();
+		$("#ff1").hide();
+    });
+});
+</script>
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("#ff2").click(function(){
+        $("#chooose").fadeOut();
+    });
+	    $("#ff1").click(function(){
+        $("#chooose").fadeOut();
+    });
+	
+	
+	
+	
+});
+</script>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("#ff1").click(function(){
+        $("#wtf").fadeIn()
+    });
+	$("#ff2").click(function(){
+        $("#wtf").fadeIn()
+    });
+});
+</script>
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("#ff1").click(function(){
+        $("#wtf1").fadeTo(1000, 0.4);
+    });
+	 $("#ff2").click(function(){
+        $("#wtf1").fadeTo(1000, 0.4);
+    });
+});
+</script>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("#lol").click(function(){
+        $("#congra").fadeToggle();
+		$("#openabout").fadeToggle();
+    });
+});
+</script>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("#openabout").click(function(){
+        $("#notabout").fadeOut();
+		$("#about").fadeIn();
+    });
+});
+</script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("#openabout2").click(function(){
+        $("#about").fadeOut();
+		$("#about2").fadeIn();
+    });
+});
+</script>
+
+
+</head>
+<body>
+
+
+
+
+<body background="airline2.png">
+<div id="notabout">
+  <div class="absolute">
+
+
+
+<button class="btn2">Here are the rules</button><br>
+  <p hidden id="p1">We are United Airline. You do What<br> we say when we say and there won't be a problem.</p>
+
+<button class="btn1" id="show" >Capiche?</button><br>
+
+<div hidden id="divv">
+ <input type="radio" name="location" value="Taipei"> Roundtrip
+<input type="radio" name="location" value="Taoyuan"> One-way<br>
+<input type="text" name="FirstName" value="From*">
+<input type="text" name="LastName" value="To*"><br>
+ Depart Date*
+  <input type="datetime-local" name="bdaytime"><br>
+  Arrive Date*
+  <input type="datetime-local" name="bdaytime"><br>
+ 
+ <button  id="hide">Next step</button>
+ 
+</div>
+
+ <div hidden id="chooose">
+ <p>Are you Asian or not?</p>
+ <button id="fg1">Yes</button>
+ <button  id="fg2" >No</button><br>
+ <p hidden id="fg11">Just warning, If the airplane is accidenetly full you might <br>got a higher percentage to be the coosen one.</p>
+ <p hidden id="fg21">If we say fly you fly if not f**k up.</p>
+<button hidden id="ff1">Submit</button>
+<button hidden id="ff2">Submit</button>
+
+
+
+</div>
+
+ <div hidden id="wtf">
+	<p id="wtf1">Purchased completed.</p>
+	<button id="lol">Do Not Press This Button</button>
+	<p hidden id="congra">Seems like you didn't do what we say so we have cancelled <br>your ticket.<br>Or we will pull you out of the plane.</p>
+	<button hidden id="openabout">About this site</button>
+</div>
+</div>
+</div>
+<div class="absolute" hidden id="about">
+<p>The Beginning of the conflict:<br>On the evening of April 9, 2017, a paid passenger was <br>forcibly removed from United Airlines Flight 3411 at <br>O'Hare International Airport, bound for Louisville. <br>United said that they needed four seats for airline staff on <br>the sold-out flight. When no passengers volunteered after <br>being offered vouchers worth $800, United staff selected <br>four passengers to leave; three did so, but the fourth, a <br>doctor named David Dao, declined. He screamed and <br>struggled as he was pulled from his seat by Chicago <br>Department of Aviation security officers, who dragged him <br>by his arms down the aisle, with Dao sustaining a <br>significant concussion, broken teeth, a broken nose, and <br>other injuries as a result. The incident was captured on <br>phone cameras and posted on social media, triggering a <br>large backlash.<button id="openabout2">Next page</button></p>
+</div>
+
+<div class="absolute" hidden id="about2">
+<p>This website is a tribute for this conflict. Hope it won't <br>happen agian. To be more respect for the pressanger and <br>no more racist in this world.</p>
+<iframe width="360" height="200" src="https://www.youtube.com/embed/4muxxItbGvo" frameborder="0" allowfullscreen></iframe>
+</div>
+
+</body>
+</html>
